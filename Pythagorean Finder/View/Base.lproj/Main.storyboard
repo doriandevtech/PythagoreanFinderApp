@@ -58,6 +58,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.85515230789999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="buttonCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpq-Dn-jfI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yvk-EV-Sg4">
                                 <rect key="frame" x="184" y="503" width="97" height="34"/>
@@ -75,6 +78,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="firstSideValue" destination="Yvk-EV-Sg4" id="Ap5-Sl-xed"/>
+                        <outlet property="secondSideValue" destination="ODL-RX-wmw" id="d6a-LI-hoX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

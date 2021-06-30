@@ -9,11 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstSideValue: UITextField!
+    @IBOutlet weak var secondSideValue: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonCalculate(_ sender: Any) {
+        let firstValue = firstSideValue.text
+        let secondValue = secondSideValue.text
+    }
+    
 }
 
