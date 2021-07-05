@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Calcul {
+    let firstValue: String
+    let secondValue: String
+    
+}
