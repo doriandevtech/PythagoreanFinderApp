@@ -8,7 +8,7 @@
 import Foundation
 
 struct Calcul {
-    let firstValue: String
-    let secondValue: String
-    
+    let firstValue: Int
+    let secondValue: Int
+    let result: Int
 }
