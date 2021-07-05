@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var calculatorBrain = CalculatorBrain()
 
     @IBOutlet weak var firstSideValue: UITextField!
     @IBOutlet weak var secondSideValue: UITextField!
@@ -20,6 +22,8 @@ class ViewController: UIViewController {
     @IBAction func buttonCalculate(_ sender: Any) {
         let firstValue = firstSideValue.text
         let secondValue = secondSideValue.text
+        
+        calculatorBrain.calculateSide()
     }
     
 }
