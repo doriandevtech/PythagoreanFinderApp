@@ -85,9 +85,9 @@
 		F4CBCF76268254FE00609FD5 /* Pythagorean Finder */ = {
 			isa = PBXGroup;
 			children = (
-				F41CAF6C268CE41A00054A6B /* Controller */,
-				F41CAF6B268CE41300054A6B /* View */,
 				F41CAF6A268CE40B00054A6B /* Model */,
+				F41CAF6B268CE41300054A6B /* View */,
+				F41CAF6C268CE41A00054A6B /* Controller */,
 				F4CBCF77268254FE00609FD5 /* AppDelegate.swift */,
 				F4CBCF79268254FE00609FD5 /* SceneDelegate.swift */,
 				F4CBCF80268254FE00609FD5 /* Assets.xcassets */,

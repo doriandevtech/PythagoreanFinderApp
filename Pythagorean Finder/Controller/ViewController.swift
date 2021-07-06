@@ -19,11 +19,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func buttonCalculate(_ sender: Any) {
+    @IBAction func buttonCalculate(_ sender: UITextField) {
         let firstValue = firstSideValue.text
         let secondValue = secondSideValue.text
+
+        let value1 = Double(firstValue ?? "")
+        let value2 = Double(secondValue ?? "")
         
-        calculatorBrain.calculateSide()
+        calculatorBrain.calculateSide(firstSide: value1, secondSide: value2)
     }
     
 }
