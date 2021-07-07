@@ -11,5 +11,7 @@ class ResultViewController: UIViewController {
     var resultValue: Int?
     var color: UIColor?
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
