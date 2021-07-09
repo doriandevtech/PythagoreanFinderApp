@@ -27,6 +27,16 @@ class ViewController: UIViewController {
         let value2 = Double(secondValue ?? "")
         
         calculatorBrain.calculateSide(firstSide: value1, secondSide: value2)
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier === "goToResult" {
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.resultValue = calculatorBrain.getResultValue()
+            destinationVC.color = calculatorBrain.getColor()
+        }
     }
     
 }
