@@ -16,9 +16,10 @@ struct CalculatorBrain {
         return resultValue
     }
     
-    mutating func calculateSide(firstSide: Double, secondSide: Double) {
+    mutating func calculateSide(firstSide: Float, secondSide: Float) {
         let insideVal = pow(firstSide, 2) + pow(secondSide, 2)
-        let thirdSide = sqrt(insideVal)
+        
+        let thirdSide = sqrt(Double(insideVal))
         
         result = Result(value: thirdSide, color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
     }

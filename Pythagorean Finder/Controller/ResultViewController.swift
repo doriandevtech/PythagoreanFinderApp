@@ -8,10 +8,12 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-    var resultValue: Int?
+    var resultValue: String?
     var color: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 }

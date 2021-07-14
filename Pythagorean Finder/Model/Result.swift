@@ -8,6 +8,6 @@
 import UIKit
 
 struct Result {
-    let value: Double
+    let value: Float
     let color: UIColor
 }
