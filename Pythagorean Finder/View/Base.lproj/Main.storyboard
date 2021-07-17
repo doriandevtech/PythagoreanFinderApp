@@ -21,24 +21,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="qnX-tV-KN9">
-                                <rect key="frame" x="44" y="96" width="347" height="726"/>
+                                <rect key="frame" x="44" y="96" width="371" height="726"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pythagorean Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-AO-Pvj">
-                                        <rect key="frame" x="50.5" y="0.0" width="246.5" height="36"/>
+                                        <rect key="frame" x="62.5" y="0.0" width="246.5" height="36"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter sides values:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN8-Kp-dvO">
-                                        <rect key="frame" x="95.5" y="121" width="156.5" height="24"/>
+                                        <rect key="frame" x="107.5" y="121" width="156.5" height="24"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Kz8-RT-Cgh">
-                                        <rect key="frame" x="114.5" y="230" width="118.5" height="24"/>
+                                        <rect key="frame" x="126.5" y="230" width="118.5" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st side:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-9N-hHl">
                                                 <rect key="frame" x="0.0" y="0.0" width="67.5" height="24"/>
@@ -56,14 +56,14 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-tt-3KK">
-                                        <rect key="frame" x="-2" y="339" width="351" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-tt-3KK" userLabel="First Side Slider">
+                                        <rect key="frame" x="-2" y="339" width="375" height="31"/>
                                         <connections>
                                             <action selector="firstSideChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="a2I-GU-YH3"/>
                                         </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-Id-n2u">
-                                        <rect key="frame" x="92.5" y="454" width="162" height="24"/>
+                                        <rect key="frame" x="104.5" y="454" width="162" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd side:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-r6-4kv">
                                                 <rect key="frame" x="0.0" y="0.0" width="77" height="24"/>
@@ -82,13 +82,13 @@
                                         </subviews>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-wW-o4q">
-                                        <rect key="frame" x="-2" y="563" width="351" height="31"/>
+                                        <rect key="frame" x="-2" y="563" width="375" height="31"/>
                                         <connections>
                                             <action selector="secondSideChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Evr-2D-18j"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-uh-aWJ">
-                                        <rect key="frame" x="112.5" y="678" width="122" height="48"/>
+                                        <rect key="frame" x="124.5" y="678" width="122" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.85515230789999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Calculate"/>
@@ -104,8 +104,10 @@
                     </view>
                     <connections>
                         <outlet property="firstSideLabel" destination="tZM-Zx-4CW" id="Dwk-VG-ziH"/>
-                        <outlet property="firstSideValue" destination="5ko-tt-3KK" id="S88-SM-oAr"/>
+                        <outlet property="firstSideSLlder" destination="5ko-tt-3KK" id="zUW-xP-fa5"/>
+                        <outlet property="firstSideSlider" destination="5ko-tt-3KK" id="oDP-sI-7p6"/>
                         <outlet property="secondSideLabel" destination="KiG-Rv-ljE" id="7hV-gE-Uti"/>
+                        <outlet property="secondSideSlider" destination="ALa-wW-o4q" id="ZAF-XI-MCv"/>
                         <outlet property="secondSideValue" destination="ALa-wW-o4q" id="yHe-a6-THS"/>
                     </connections>
                 </viewController>
