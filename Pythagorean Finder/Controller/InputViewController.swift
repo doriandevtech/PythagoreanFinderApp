@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InputViewController: UIViewController {
     
     var calculatorBrain = CalculatorBrain()
 
@@ -36,16 +36,22 @@ class ViewController: UIViewController {
         let firstValue = firstSideSlider.value
         let secondValue = secondSideSlider.value
         
-        calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
-        self.performSegue(withIdentifier: "goToResult", sender: self)
+        print(firstValue + secondValue)
+        
+        let secondVC = ResultViewController()
+        
+        self.present(secondVC, animated: true, completion: nil)
+        
+//        calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
+//        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier === "goToResult" {
-            let destinationVC = segue.destination as! ResultViewController
-            destinationVC.resultValue = calculatorBrain.getResultValue()
-            destinationVC.color = calculatorBrain.getColor()
-        }
-    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier === "goToResult" {
+//            let destinationVC = segue.destination as! ResultViewController
+//            destinationVC.resultValue = calculatorBrain.getResultValue()
+//            destinationVC.color = calculatorBrain.getColor()
+//        }
+//    }
     
 }
