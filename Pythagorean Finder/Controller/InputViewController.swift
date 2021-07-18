@@ -49,7 +49,7 @@ class InputViewController: UIViewController {
         if segue.identifier == "goToValue" {
             let destinationResult = segue.destination as! ResultViewController
             destinationResult.resultValue = calculatorBrain.getResultValue()
-//            destinationResult.resultColor = calculatorBrain.getColor()
+            destinationResult.resultColor = calculatorBrain.getColor()
         }
     }
     
