@@ -36,9 +36,12 @@ class InputViewController: UIViewController {
         let firstValue = firstSideSlider.value
         let secondValue = secondSideSlider.value
         
-        print(firstValue + secondValue)
+        let resultTest = sqrt(pow(firstValue, 2) + pow(secondValue, 2))
+        
+        print(resultTest)
         
         let secondVC = ResultViewController()
+        secondVC.result = String(format: "%.0f", resultTest)
         
         self.present(secondVC, animated: true, completion: nil)
         
