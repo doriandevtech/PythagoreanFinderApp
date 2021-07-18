@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="ECW-v4-aox">
             <objects>
-                <viewController id="i9l-86-ucH" sceneMemberID="viewController">
+                <viewController id="i9l-86-ucH" customClass="ResultViewController" customModule="Pythagorean_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPl-8Y-Anj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -2,23 +2,28 @@
 //  ResultViewController.swift
 //  Pythagorean Finder
 //
-//  Created by Dorian Emenir on 07/07/2021.
+//  Created by Dorian Emenir on 18/07/2021.
 //
 
 import UIKit
 
 class ResultViewController: UIViewController {
-    var resultValue: String?
-    var color: UIColor?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .red
-        
-        let label = UILabel()
-        label.text = resultValue
-        label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
-        view.addSubview(label)
+
+        // Do any additional setup after loading the view.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
