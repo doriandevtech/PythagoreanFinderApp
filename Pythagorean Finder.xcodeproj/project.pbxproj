@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F407B1ED26A445910085820E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F407B1EC26A445910085820E /* ResultViewController.swift */; };
 		F448540B268E578500D9DB1E /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448540A268E578500D9DB1E /* CalculatorBrain.swift */; };
-		F4A6A5E8269398DF006264E4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6A5E7269398DF006264E4 /* Result.swift */; };
+		F4A6A5E8269398DF006264E4 /* ThirdSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6A5E7269398DF006264E4 /* ThirdSide.swift */; };
 		F4CBCF78268254FE00609FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBCF77268254FE00609FD5 /* AppDelegate.swift */; };
 		F4CBCF7A268254FE00609FD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBCF79268254FE00609FD5 /* SceneDelegate.swift */; };
 		F4CBCF7C268254FE00609FD5 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBCF7B268254FE00609FD5 /* InputViewController.swift */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		F407B1EC26A445910085820E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F448540A268E578500D9DB1E /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "Pythagorean Finder/View/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
-		F4A6A5E7269398DF006264E4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F4A6A5E7269398DF006264E4 /* ThirdSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSide.swift; sourceTree = "<group>"; };
 		F4CBCF74268254FE00609FD5 /* Pythagorean Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pythagorean Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CBCF77268254FE00609FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4CBCF79268254FE00609FD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				F448540A268E578500D9DB1E /* CalculatorBrain.swift */,
-				F4A6A5E7269398DF006264E4 /* Result.swift */,
+				F4A6A5E7269398DF006264E4 /* ThirdSide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CBCF7C268254FE00609FD5 /* InputViewController.swift in Sources */,
-				F4A6A5E8269398DF006264E4 /* Result.swift in Sources */,
+				F4A6A5E8269398DF006264E4 /* ThirdSide.swift in Sources */,
 				F407B1ED26A445910085820E /* ResultViewController.swift in Sources */,
 				F4CBCF78268254FE00609FD5 /* AppDelegate.swift in Sources */,
 				F448540B268E578500D9DB1E /* CalculatorBrain.swift in Sources */,

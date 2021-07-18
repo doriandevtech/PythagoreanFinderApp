@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Result {
+struct ThirdSide {
     let value: Float
     let color: UIColor
 }
