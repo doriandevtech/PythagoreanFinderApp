@@ -40,21 +40,17 @@ class InputViewController: UIViewController {
         
         print(resultTest)
         
-//        calculatorBrain = CalculatorBrain()
-//        
-//        calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
-        self.performSegue(withIdentifier: "goToValue", sender: self)
+        
+        calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
+        performSegue(withIdentifier: "goToValue", sender: self)
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier === "goToResult" {
-//            let destinationVC = segue.destination as! ResultViewController
-//            destinationVC.resultValue = calculatorBrain.getResultValue()
-//            destinationVC.color = calculatorBrain.getColor()
-//        }
-//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        sender.destination
+        if segue.identifier == "goToValue" {
+            let destinationResult = segue.destination as! ResultViewController
+            destinationResult.resultValue = calculatorBrain.getResultValue()
+//            destinationResult.resultColor = calculatorBrain.getColor()
+        }
     }
     
 }
