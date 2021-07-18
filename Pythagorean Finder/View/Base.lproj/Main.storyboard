@@ -121,6 +121,7 @@
                         <outlet property="firstSideSlider" destination="5ko-tt-3KK" id="oDP-sI-7p6"/>
                         <outlet property="secondSideLabel" destination="KiG-Rv-ljE" id="7hV-gE-Uti"/>
                         <outlet property="secondSideSlider" destination="ALa-wW-o4q" id="ZAF-XI-MCv"/>
+                        <segue destination="i9l-86-ucH" kind="presentation" identifier="goToValue" id="NFo-Nm-arf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,15 +133,35 @@
             <objects>
                 <viewController id="i9l-86-ucH" customClass="ResultViewController" customModule="Pythagorean_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPl-8Y-Anj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Ab-uhK">
+                                <rect key="frame" x="186" y="438" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
+                                <rect key="frame" x="165" y="773" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Recalculate"/>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="i9l-86-ucH" eventType="touchUpInside" id="sN1-Bx-Pg5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ecV-cc-KjI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="1fk-Ab-uhK" id="bLN-AV-OIM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLE-Ca-8ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="78"/>
+            <point key="canvasLocation" x="786" y="78"/>
         </scene>
     </scenes>
     <resources>

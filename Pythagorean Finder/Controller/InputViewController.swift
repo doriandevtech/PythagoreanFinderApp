@@ -40,15 +40,12 @@ class InputViewController: UIViewController {
         
         print(resultTest)
         
-        let secondVC = ResultViewController()
-        secondVC.result = String(format: "%.0f", resultTest)
-        
-        self.present(secondVC, animated: true, completion: nil)
-        
+//        calculatorBrain = CalculatorBrain()
+//        
 //        calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
-//        self.performSegue(withIdentifier: "goToResult", sender: self)
+        self.performSegue(withIdentifier: "goToValue", sender: self)
     }
-//
+
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if segue.identifier === "goToResult" {
 //            let destinationVC = segue.destination as! ResultViewController
@@ -56,5 +53,8 @@ class InputViewController: UIViewController {
 //            destinationVC.color = calculatorBrain.getColor()
 //        }
 //    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        sender.destination
+    }
     
 }
