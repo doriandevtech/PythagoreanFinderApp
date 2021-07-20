@@ -16,7 +16,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.text = resultValue
+        resultLabel.text = "\(resultValue ?? "0") cm"
         view.backgroundColor = resultColor
     }
     
