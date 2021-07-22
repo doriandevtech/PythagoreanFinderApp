@@ -162,7 +162,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
                                 <rect key="frame" x="137" y="707" width="143" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                 <state key="normal" title="Recalculate"/>
                                 <connections>
                                     <action selector="recalculatePressed:" destination="i9l-86-ucH" eventType="touchUpInside" id="sN1-Bx-Pg5"/>
