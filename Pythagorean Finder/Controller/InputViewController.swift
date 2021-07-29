@@ -59,9 +59,6 @@ class InputViewController: UIViewController {
         
         let resultTest = sqrt(pow(firstValue, 2) + pow(secondValue, 2))
         
-        print(resultTest)
-        
-        
         calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
         performSegue(withIdentifier: "goToValue", sender: self)
     }
