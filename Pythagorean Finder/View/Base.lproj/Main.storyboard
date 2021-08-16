@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="InputViewController" customModule="Pythagorean_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zv6-es-dVr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackground" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zv6-es-dVr">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="qnX-tV-KN9">
-                                <rect key="frame" x="10" y="85" width="394" height="726"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="qnX-tV-KN9">
+                                <rect key="frame" x="10" y="41" width="1004" height="1254"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pythagorean Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-AO-Pvj">
-                                        <rect key="frame" x="22" y="0.0" width="350" height="71"/>
+                                        <rect key="frame" x="327" y="0.0" width="350" height="71"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="350" id="xe2-uL-WKE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="ZEX-X7-QIt"/>
+                                            <constraint firstAttribute="height" constant="71" id="jXY-mN-GAy"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kz8-RT-Cgh">
-                                        <rect key="frame" x="67" y="156" width="260" height="50"/>
+                                        <rect key="frame" x="372" y="247" width="260" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st side :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-9N-hHl">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
@@ -60,7 +62,7 @@
                                         </constraints>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-tt-3KK" userLabel="First Side Slider">
-                                        <rect key="frame" x="25" y="291" width="344" height="31"/>
+                                        <rect key="frame" x="330" y="494" width="344" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="pEW-ou-ldO"/>
                                             <constraint firstAttribute="width" constant="340" id="spG-CU-1nc"/>
@@ -70,7 +72,7 @@
                                         </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-Id-n2u">
-                                        <rect key="frame" x="67" y="406" width="260" height="50"/>
+                                        <rect key="frame" x="372" y="720.5" width="260" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd side :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-r6-4kv">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
@@ -96,7 +98,7 @@
                                         </constraints>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-wW-o4q">
-                                        <rect key="frame" x="25" y="541" width="344" height="31"/>
+                                        <rect key="frame" x="330" y="967.5" width="344" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="340" id="t3p-RK-tpa"/>
                                             <constraint firstAttribute="height" constant="30" id="vrr-50-cmr"/>
@@ -106,7 +108,7 @@
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-uh-aWJ">
-                                        <rect key="frame" x="107" y="656" width="180" height="70"/>
+                                        <rect key="frame" x="412" y="1184" width="180" height="70"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="Ebd-rT-RUd"/>
@@ -146,14 +148,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+            <point key="canvasLocation" x="18.75" y="78.184480234260604"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="ECW-v4-aox">
             <objects>
                 <viewController id="i9l-86-ucH" customClass="ResultViewController" customModule="Pythagorean_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPl-8Y-Anj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3rd side's length :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-U1-byp">
