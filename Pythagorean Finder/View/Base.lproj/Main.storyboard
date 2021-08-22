@@ -158,7 +158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="300" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-X9-uHq">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="300" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-X9-uHq">
                                 <rect key="frame" x="240" y="107" width="224.5" height="744"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3rd side's length :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-U1-byp">
@@ -184,10 +184,22 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="SAB-ZV-FQf" firstAttribute="top" secondItem="1fk-Ab-uhK" secondAttribute="bottom" constant="300" id="OhM-5d-iFO"/>
+                                    <constraint firstItem="1fk-Ab-uhK" firstAttribute="leading" secondItem="3pL-X9-uHq" secondAttribute="leading" constant="58.5" id="TLs-FN-NkB"/>
+                                    <constraint firstAttribute="trailing" secondItem="1fk-Ab-uhK" secondAttribute="trailing" constant="58.5" id="o3e-kX-ZJF"/>
+                                    <constraint firstItem="1fk-Ab-uhK" firstAttribute="top" secondItem="Fcj-U1-byp" secondAttribute="bottom" constant="300" id="uB7-Al-R2A"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ecV-cc-KjI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ecV-cc-KjI" firstAttribute="bottom" secondItem="3pL-X9-uHq" secondAttribute="bottom" constant="144.5" id="TEh-d8-fgr"/>
+                            <constraint firstItem="ecV-cc-KjI" firstAttribute="trailing" secondItem="3pL-X9-uHq" secondAttribute="trailing" constant="239.5" id="W5H-6e-zeO"/>
+                            <constraint firstItem="3pL-X9-uHq" firstAttribute="top" secondItem="ecV-cc-KjI" secondAttribute="top" constant="107" id="i8a-Iq-BaV"/>
+                            <constraint firstItem="3pL-X9-uHq" firstAttribute="leading" secondItem="ecV-cc-KjI" secondAttribute="leading" constant="240" id="uY0-yU-smn"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resultLabel" destination="1fk-Ab-uhK" id="bLN-AV-OIM"/>
