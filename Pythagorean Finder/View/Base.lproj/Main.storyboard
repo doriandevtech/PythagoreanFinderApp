@@ -174,8 +174,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
-                                        <rect key="frame" x="41" y="696" width="143" height="48"/>
+                                        <rect key="frame" x="32.5" y="696" width="160" height="48"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="h0y-94-ueB"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                         <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                         <state key="normal" title="Recalculate"/>
