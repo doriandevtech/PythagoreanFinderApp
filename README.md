@@ -4,6 +4,6 @@ So you're searching for the third side of your rectangle triangle ? Well this ap
 
 The project is updated pretty much every single day, so keep up ! ;)
 
-Have a go with this app ;)
+Have a go with this app and have fun ;)
 
 Cheers !
