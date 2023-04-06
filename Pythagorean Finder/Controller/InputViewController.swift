@@ -26,43 +26,38 @@ class InputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainTitle.layer.cornerRadius = 15
-        mainTitle.layer.masksToBounds = true
+        setup(mainTitle)
+
+        setup(firstSideTitle)
+        setup(firstSideLabel)
         
-        firstSideTitle.layer.cornerRadius = 15
-        firstSideTitle.layer.masksToBounds = true
-        firstSideLabel.layer.cornerRadius = 15
-        firstSideLabel.layer.masksToBounds = true
-        firstSideSlider.layer.cornerRadius = 15
-        firstSideSlider.layer.masksToBounds = true
+        setup(secondSideTitle)
+        setup(secondSideLabel)
         
-        secondSideTitle.layer.cornerRadius = 15
-        secondSideTitle.layer.masksToBounds = true
-        secondSideLabel.layer.cornerRadius = 15
-        secondSideLabel.layer.masksToBounds = true
-        secondSideSlider.layer.cornerRadius = 15
-        secondSideSlider.layer.masksToBounds = true
-        
-        calculateTitle.layer.cornerRadius = 15
-        calculateTitle.layer.masksToBounds = true
+        setup(firstSideSlider)
+        setup(secondSideSlider)
+                
+        setup(calculateTitle)    }
+    
+    func setup(_ object: UIView) {
+        object.layer.cornerRadius = 15
+        object.layer.masksToBounds = true
     }
     
     @IBAction func firstSideChanged(_ sender: UISlider) {
         let firstVal = String(format: "%.0f", sender.value)
-        firstSideLabel.text = "\(firstVal)cm"
+        firstSideLabel.text = "\(firstVal) cm"
     }
     
     @IBAction func secondSideChanged(_ sender: UISlider) {
         let secondVal = String(format: "%.0f", sender.value)
-        secondSideLabel.text = "\(secondVal)cm"
+        secondSideLabel.text = "\(secondVal) cm"
     }
 
     @IBAction func buttonCalculate(_ sender: UIButton) {
-        let firstValue = firstSideSlider.value
-        let secondValue = secondSideSlider.value
-        
-        let resultTest = sqrt(pow(firstValue, 2) + pow(secondValue, 2))
-        
+        let firstValue: Float = firstSideSlider.value
+        let secondValue: Float = secondSideSlider.value
+                
         calculatorBrain.calculateSide(firstSide: firstValue, secondSide: secondValue)
         performSegue(withIdentifier: "goToValue", sender: self)
     }
