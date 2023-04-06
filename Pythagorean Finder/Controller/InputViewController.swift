@@ -49,12 +49,12 @@ class InputViewController: UIViewController {
     // MARK: IBActions
     
     @IBAction func firstSideChanged(_ sender: UISlider) {
-        let firstVal = String(format: "%.0f", sender.value)
+        let firstVal = Int(round(sender.value))
         firstSideLabel.text = "\(firstVal) cm"
     }
     
     @IBAction func secondSideChanged(_ sender: UISlider) {
-        let secondVal = String(format: "%.0f", sender.value)
+        let secondVal = Int(round(sender.value))
         secondSideLabel.text = "\(secondVal) cm"
     }
 
