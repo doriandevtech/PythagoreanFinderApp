@@ -13,12 +13,17 @@ class ResultViewController: UIViewController {
     var resultColor: UIColor?
 
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var recalculateBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         resultLabel.text = "\(resultValue ?? "0") cm"
         resultLabel.layer.cornerRadius = 15
         view.backgroundColor = resultColor
+        
+        recalculateBtn.layer.cornerRadius = 15
+        
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
