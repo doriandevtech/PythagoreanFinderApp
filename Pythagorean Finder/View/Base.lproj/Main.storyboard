@@ -172,34 +172,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="280" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-X9-uHq">
-                                <rect key="frame" x="0.0" y="92" width="430" height="780"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="241" translatesAutoresizingMaskIntoConstraints="NO" id="be7-mE-nYD">
+                                <rect key="frame" x="0.0" y="200" width="430" height="622"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3rd side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-U1-byp">
-                                        <rect key="frame" x="164.33333333333334" y="0.0" width="101.33333333333334" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V9U-nf-Gnq">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="311"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="3rd side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-U1-byp">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="108.33333333333333"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Ab-uhK">
+                                                <rect key="frame" x="0.0" y="138.33333333333331" width="430" height="172.66666666666669"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="toy-Ux-DgS"/>
+                                            <constraint firstItem="Fcj-U1-byp" firstAttribute="leading" secondItem="V9U-nf-Gnq" secondAttribute="leading" id="9is-TT-nkh"/>
+                                            <constraint firstItem="Fcj-U1-byp" firstAttribute="top" secondItem="V9U-nf-Gnq" secondAttribute="top" id="Uth-Ja-ydW"/>
+                                            <constraint firstItem="1fk-Ab-uhK" firstAttribute="leading" secondItem="V9U-nf-Gnq" secondAttribute="leading" id="ZX7-EU-DVm"/>
+                                            <constraint firstAttribute="bottom" secondItem="1fk-Ab-uhK" secondAttribute="bottom" id="csG-WZ-zuA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fcj-U1-byp" secondAttribute="trailing" id="rPz-EZ-RSJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1fk-Ab-uhK" secondAttribute="trailing" id="zsG-ZH-Vz8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Ab-uhK">
-                                        <rect key="frame" x="140" y="330" width="150" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="KiR-Sh-O7R"/>
-                                            <constraint firstAttribute="width" constant="150" id="acx-Ni-o4b"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
-                                        <rect key="frame" x="115" y="710" width="200" height="70"/>
+                                        <rect key="frame" x="100" y="552" width="230" height="70"/>
                                         <color key="backgroundColor" red="0.81966179610000001" green="0.90733164550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="YOd-by-EEf"/>
-                                            <constraint firstAttribute="width" constant="200" id="fSX-LD-PUI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -212,16 +217,20 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="1fk-Ab-uhK" firstAttribute="top" secondItem="Fcj-U1-byp" secondAttribute="bottom" constant="30" id="L2a-eE-uki"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9U-nf-Gnq" secondAttribute="trailing" id="hiA-nY-kbG"/>
+                                    <constraint firstAttribute="trailing" secondItem="SAB-ZV-FQf" secondAttribute="trailing" constant="100" id="nTV-gc-yt8"/>
+                                    <constraint firstItem="V9U-nf-Gnq" firstAttribute="leading" secondItem="be7-mE-nYD" secondAttribute="leading" id="nvb-Wh-3g0"/>
+                                    <constraint firstItem="SAB-ZV-FQf" firstAttribute="leading" secondItem="be7-mE-nYD" secondAttribute="leading" constant="100" id="slx-rN-CE5"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ecV-cc-KjI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ecV-cc-KjI" firstAttribute="bottom" secondItem="3pL-X9-uHq" secondAttribute="bottom" constant="50" id="2lo-SA-zEE"/>
-                            <constraint firstItem="ecV-cc-KjI" firstAttribute="trailing" secondItem="3pL-X9-uHq" secondAttribute="trailing" id="3li-oa-I4P"/>
-                            <constraint firstItem="3pL-X9-uHq" firstAttribute="leading" secondItem="ecV-cc-KjI" secondAttribute="leading" id="SVp-XA-YtG"/>
+                            <constraint firstItem="be7-mE-nYD" firstAttribute="leading" secondItem="ecV-cc-KjI" secondAttribute="leading" id="2vJ-MO-d7u"/>
+                            <constraint firstItem="ecV-cc-KjI" firstAttribute="trailing" secondItem="be7-mE-nYD" secondAttribute="trailing" id="2yX-Zz-mYI"/>
+                            <constraint firstItem="ecV-cc-KjI" firstAttribute="bottom" secondItem="be7-mE-nYD" secondAttribute="bottom" constant="100" id="rda-EW-f8p"/>
+                            <constraint firstItem="be7-mE-nYD" firstAttribute="top" secondItem="ecV-cc-KjI" secondAttribute="top" constant="200" id="z8q-mY-Wn0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zNl-Xz-csv"/>
