@@ -15,7 +15,7 @@ class InputViewController: UIViewController {
     
     @IBOutlet weak var firstSideTitle: UILabel!
     @IBOutlet weak var firstSideLabel: UILabel!
-    @IBOutlet weak var secondSideTitle: UIStackView!
+    @IBOutlet weak var secondSideTitle: UILabel!
     @IBOutlet weak var secondSideLabel: UILabel!
     
     @IBOutlet weak var firstSideSlider: UISlider!
@@ -33,11 +33,15 @@ class InputViewController: UIViewController {
         firstSideTitle.layer.masksToBounds = true
         firstSideLabel.layer.cornerRadius = 15
         firstSideLabel.layer.masksToBounds = true
+        firstSideSlider.layer.cornerRadius = 15
+        firstSideSlider.layer.masksToBounds = true
         
         secondSideTitle.layer.cornerRadius = 15
         secondSideTitle.layer.masksToBounds = true
         secondSideLabel.layer.cornerRadius = 15
         secondSideLabel.layer.masksToBounds = true
+        secondSideSlider.layer.cornerRadius = 15
+        secondSideSlider.layer.masksToBounds = true
         
         calculateTitle.layer.cornerRadius = 15
         calculateTitle.layer.masksToBounds = true
