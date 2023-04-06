@@ -30,11 +30,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-qM-bwr">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-qM-bwr">
                                         <rect key="frame" x="65" y="206.33333333333331" width="300" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-Wv-akB">
-                                                <rect key="frame" x="20" y="0.0" width="260" height="50"/>
+                                                <rect key="frame" x="1.6666666666666572" y="0.0" width="296.66666666666674" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-9N-hHl">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
@@ -46,12 +46,9 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-Zx-4CW" userLabel="1stSideValue">
-                                                        <rect key="frame" x="180" y="0.0" width="80" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-Zx-4CW" userLabel="1stSideValue">
+                                                        <rect key="frame" x="180" y="0.0" width="116.66666666666669" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="tNj-aG-vFf"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -61,8 +58,8 @@
                                                     <constraint firstAttribute="height" constant="50" id="Uta-ar-CQ3"/>
                                                 </constraints>
                                             </stackView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-tt-3KK" userLabel="First Side Slider">
-                                                <rect key="frame" x="-2" y="111" width="304" height="40"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-tt-3KK" userLabel="First Side Slider">
+                                                <rect key="frame" x="-2" y="80" width="304" height="71"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="n1n-Cf-rS1"/>
@@ -76,11 +73,11 @@
                                             <constraint firstAttribute="height" constant="150" id="OAe-VQ-1Oe"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="FVP-gr-kaB">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FVP-gr-kaB">
                                         <rect key="frame" x="65" y="472.66666666666663" width="300" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9yd-Li-CoQ">
-                                                <rect key="frame" x="17.333333333333343" y="0.0" width="265.33333333333326" height="50"/>
+                                                <rect key="frame" x="11.666666666666657" y="0.0" width="276.66666666666674" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn1-r6-4kv">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
@@ -92,8 +89,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-Rv-ljE" userLabel="2ndSideValue">
-                                                        <rect key="frame" x="180" y="0.0" width="85.333333333333314" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-Rv-ljE" userLabel="2ndSideValue">
+                                                        <rect key="frame" x="180" y="0.0" width="96.666666666666686" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemMintColor"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                                         <nil key="textColor"/>
@@ -105,7 +102,7 @@
                                                 </constraints>
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-wW-o4q">
-                                                <rect key="frame" x="-2" y="77" width="304" height="74"/>
+                                                <rect key="frame" x="-2" y="80" width="304" height="71"/>
                                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="4WH-YW-XaL"/>
@@ -119,16 +116,17 @@
                                             <constraint firstAttribute="height" constant="150" id="Nb6-rH-9jA"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-uh-aWJ">
-                                        <rect key="frame" x="140" y="739" width="150" height="70"/>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-uh-aWJ">
+                                        <rect key="frame" x="115" y="739" width="200" height="70"/>
+                                        <color key="backgroundColor" red="0.81966179610000001" green="0.90733164550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="B0Z-yw-n6I"/>
+                                            <constraint firstAttribute="width" constant="200" id="B0Z-yw-n6I"/>
                                             <constraint firstAttribute="height" constant="70" id="xj6-SS-4Le"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Calculate">
-                                            <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                            <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpq-Dn-jfI"/>
@@ -196,16 +194,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
-                                        <rect key="frame" x="143.66666666666666" y="710" width="142.99999999999997" height="70"/>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAB-ZV-FQf">
+                                        <rect key="frame" x="115" y="710" width="200" height="70"/>
+                                        <color key="backgroundColor" red="0.81966179610000001" green="0.90733164550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="YOd-by-EEf"/>
-                                            <constraint firstAttribute="width" constant="150" id="fSX-LD-PUI"/>
+                                            <constraint firstAttribute="width" constant="200" id="fSX-LD-PUI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Recalculate"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Recalculate">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="recalculatePressed:" destination="i9l-86-ucH" eventType="touchUpInside" id="sN1-Bx-Pg5"/>
                                         </connections>
@@ -236,14 +236,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
