@@ -24,9 +24,9 @@ struct CalculatorBrain {
         let thirdSide = sqrt(pow(firstSide, 2) + pow(secondSide, 2))
         
         if (firstSide == 0 || secondSide == 0) {
-            thirdSideValue = ThirdSide(value: 0, color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+            thirdSideValue = ThirdSide(value: 0, color: .systemRed)
         } else {
-            thirdSideValue = ThirdSide(value: thirdSide, color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+            thirdSideValue = ThirdSide(value: thirdSide, color: .systemGreen)
         }
     }
 }
