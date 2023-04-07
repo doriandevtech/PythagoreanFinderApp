@@ -45,6 +45,15 @@ class InputViewController: UIViewController {
         object.layer.masksToBounds = true
     }
     
+    let colors = Colors()
+
+    func refresh() {
+        view.backgroundColor = UIColor.clear
+        var backgroundLayer = colors.gl
+        backgroundLayer.frame = view.frame
+        view.layer.insertSublayer(backgroundLayer, at: 0)
+    }
+        
     
     // MARK: IBActions
     
