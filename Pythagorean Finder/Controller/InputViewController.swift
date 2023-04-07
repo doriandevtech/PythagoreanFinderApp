@@ -33,6 +33,11 @@ class InputViewController: UIViewController {
         setup(firstSideSlider)
         setup(secondSideSlider)
         setup(calculateTitle)
+        
+        setupGradient(mainTitle, UIColor.orange.cgColor)
+        setupGradient(firstSideSlider, UIColor.systemMint.cgColor)
+        setupGradient(secondSideSlider, UIColor.tintColor.cgColor)
+        
     }
 
     
@@ -45,13 +50,16 @@ class InputViewController: UIViewController {
         object.layer.masksToBounds = true
     }
     
-    let colors = Colors()
-
-    func refresh() {
-        view.backgroundColor = UIColor.clear
-        var backgroundLayer = colors.gl
-        backgroundLayer.frame = view.frame
-        view.layer.insertSublayer(backgroundLayer, at: 0)
+    
+    /// sets up the UIView object's background color using a gradient
+    /// - Parameters:
+    ///   - object: UIView object (e.g. UILabel, UISlider, UIButton)
+    ///   - endColor: the chosen color where the gradient has to lead to
+    func setupGradient(_ object: UIView, _ endColor: CGColor) {
+        let gradient = CAGradientLayer()
+        gradient.frame = object.bounds
+        gradient.colors = [UIColor .clear, endColor]
+        object.layer.insertSublayer(gradient, at: 0)
     }
         
     
