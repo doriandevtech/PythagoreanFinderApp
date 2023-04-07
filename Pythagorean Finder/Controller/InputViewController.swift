@@ -51,6 +51,8 @@ class InputViewController: UIViewController {
     }
     
     
+    // MARK: setup UIView objects gradient
+    
     /// sets up the UIView object's background color using a gradient
     /// - Parameters:
     ///   - object: UIView object (e.g. UILabel, UISlider, UIButton)
