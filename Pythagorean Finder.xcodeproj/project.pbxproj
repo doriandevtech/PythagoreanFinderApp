@@ -59,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CFFBB529E08C3C00255978 /* Colors.swift */,
+				F4CBCF7D268254FE00609FD5 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,7 +98,6 @@
 				F41CAF6C268CE41A00054A6B /* Controller */,
 				F4CBCF77268254FE00609FD5 /* AppDelegate.swift */,
 				F4CBCF79268254FE00609FD5 /* SceneDelegate.swift */,
-				F4CBCF7D268254FE00609FD5 /* Main.storyboard */,
 				F4CBCF80268254FE00609FD5 /* Assets.xcassets */,
 				F4CBCF82268254FE00609FD5 /* LaunchScreen.storyboard */,
 				F4CBCF85268254FE00609FD5 /* Info.plist */,
